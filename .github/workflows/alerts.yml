@@ -1,4 +1,4 @@
-name: TRON Case 1531 Monitor
+name: EU Trade Defence Alerts
 
 on:
   schedule:
@@ -11,7 +11,6 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
-
     steps:
       - name: Get scraper files
         uses: actions/checkout@v4
