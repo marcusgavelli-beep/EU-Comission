@@ -1,4 +1,4 @@
-name: EU Trade Defence Alerts
+name: TRON Case 1531 Monitor
 
 on:
   schedule:
@@ -11,6 +11,7 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
+
     steps:
       - name: Get scraper files
         uses: actions/checkout@v4
@@ -19,7 +20,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-                - name: Install Playwright
+
+      - name: Install Playwright
         run: |
           pip install playwright
           playwright install --with-deps chromium
